@@ -25,7 +25,7 @@ The system is designed for:
 
 
 ## Tech Stack
-### 1 Frontend (React + Vite)
+### 1. Frontend (React + Vite)
 1. Live camera streaming
 
 2. Video upload & analysis interface
@@ -35,7 +35,7 @@ The system is designed for:
 4. Severity badges & snapshot viewer  
 
 
-### 2 AI Microservice (FastAPI + YOLO/OpenCV)
+### 2. AI Microservice (FastAPI + YOLO/OpenCV)
 1. Frame-by-frame accident detection
 
 2. Victim count (person/vehicle detection)
@@ -44,7 +44,7 @@ The system is designed for:
 
 4. Sends structured JSON metadata to backend
 
-### 3 Backend (Spring Boot + MySQL)
+### 3. Backend (Spring Boot + MySQL)
 1. Stores incident data
 
 2. REST APIs for frontend
@@ -55,38 +55,38 @@ The system is designed for:
 
 ## How to Run the Project
 
-### Start the AI Service
+### step 1.Start the AI Service
 1. ```cd ai-service-python```
 2. ```pip install -r requirements.txt```
 3. ```uvicorn main:app --reload```
 
-### Start the Spring Boot Backend
+### step 2. Start the Spring Boot Backend
 1. ```cd backend-java```
 2. ```mvn spring-boot:run```
 
-### Start the React Frontend
+### step 3. Start the React Frontend
 1. ```cd frontend-react```
 2. ```npm install```
 3. ```npm run dev```
 
 ## Features
-##### 1 Real-time Accident Detection
-##### 2 Severity Classification
+#### 1. Real-time Accident Detection
+#### 2. Severity Classification
 -- Categorizes incidents as:
 a. Minor
 b. Moderate 
 c. Major
 d. Critical
-##### 3 Medical Injury Estimation
+#### 3. Medical Injury Estimation
 -- AI-based injury approximation based on severity and victim count.
 
-##### 4 Snapshot Timeline
-##### 5 Stores three images:
+#### 4. Snapshot Timeline
+#### 5. Stores three images:
 1. Pre-impact
 2. Impact
 3. Post-impact
 
-##### 6 WhatsApp Alert Automation
+#### 6. WhatsApp Alert Automation
 -- Send the Alert message from twilio and to start this service first create and verify your whatsapp number from Twilio and make sure to update ```application.properties file``` in the backend.
 
 #  Configuration & Secrets (IMPORTANT)
