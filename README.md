@@ -55,7 +55,7 @@ The system is designed for:
 
 ## How to Run the Project
 
-### step 1.Start the AI Service
+### step 1. Start the AI Service
 1. ```cd ai-service-python```
 2. ```pip install -r requirements.txt```
 3. ```uvicorn main:app --reload```
