@@ -70,23 +70,23 @@ The system is designed for:
 3. ```npm run dev```
 
 ## Features
-##### Real-time Accident Detection
-##### Severity Classification
+##### 1 Real-time Accident Detection
+##### 2 Severity Classification
 -- Categorizes incidents as:
 a. Minor
 b. Moderate 
 c. Major
 d. Critical
-##### Medical Injury Estimation
+##### 3 Medical Injury Estimation
 -- AI-based injury approximation based on severity and victim count.
 
-##### Snapshot Timeline
-##### Stores three images:
+##### 4 Snapshot Timeline
+##### 5 Stores three images:
 1. Pre-impact
 2. Impact
 3. Post-impact
 
-##### WhatsApp Alert Automation
+##### 6 WhatsApp Alert Automation
 -- Send the Alert message from twilio and to start this service first create and verify your whatsapp number from Twilio and make sure to update ```application.properties file``` in the backend.
 
 #  Configuration & Secrets (IMPORTANT)
