@@ -56,18 +56,18 @@ The system is designed for:
 # How to Run the Project
 
 ## Start the AI Service
-```cd ai-service-python```
-```pip install -r requirements.txt```
-```uvicorn main:app --reload```
+1. ```cd ai-service-python```
+2. ```pip install -r requirements.txt```
+3. ```uvicorn main:app --reload```
 
 ## Start the Spring Boot Backend
-```cd backend-java```
-```mvn spring-boot:run```
+1. ```cd backend-java```
+2. ```mvn spring-boot:run```
 
 ## Start the React Frontend
-```cd frontend-react```
-```npm install```
-```npm run dev```
+1. ```cd frontend-react```
+2. ```npm install```
+3. ```npm run dev```
 
 # Features
 1. Real-time Accident Detection
