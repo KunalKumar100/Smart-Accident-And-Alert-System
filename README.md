@@ -56,27 +56,27 @@ The system is designed for:
 # How to Run the Project
 
 ## Start the AI Service
-**cd ai-service-python**
-**pip install -r requirements.txt**
-**uvicorn main:app --reload**
+```cd ai-service-python```
+```pip install -r requirements.txt```
+```uvicorn main:app --reload```
 
 ## Start the Spring Boot Backend
-**cd backend-java**
-**mvn spring-boot:run**
+```cd backend-java```
+```mvn spring-boot:run```
 
 ## Start the React Frontend
-**cd frontend-react**
-**npm install**
-**npm run dev**
+```cd frontend-react```
+```npm install```
+```npm run dev```
 
 # Features
-### Real-time Accident Detection
-### Severity Classification
-#### Categorizes incidents as:
-1. Minor
-2. Moderate 
-3. Major
-4. Critical
+1. Real-time Accident Detection
+2. Severity Classification
+-- Categorizes incidents as:
+a. Minor
+b. Moderate 
+c. Major
+d. Critical
 ### Medical Injury Estimation
 -- AI-based injury approximation based on severity and victim count.
 
@@ -95,12 +95,12 @@ You must provide your own API keys and secrets via environment variables.
 
 Set the following in your system in the backend where the file loction is ```Backend-java\src\main\resources\application.properties``` :
 
-```DB_URL=jdbc:mysql://localhost:3306/accidents_db```
-```DB_USERNAME=your_db_user```
-```DB_PASSWORD=your_db_password```
-```TWILIO_ACCOUNT_SID=your_twilio_sid```
-```TWILIO_AUTH_TOKEN=your_twilio_token```
-```TWILIO_WHATSAPP_NUMBER=whatsapp:+1234567890 ```
+DB_URL=jdbc:mysql://localhost:3306/accidents_db
+DB_USERNAME=your_db_user
+DB_PASSWORD=your_db_password
+TWILIO_ACCOUNT_SID=your_twilio_sid
+TWILIO_AUTH_TOKEN=your_twilio_token
+TWILIO_WHATSAPP_NUMBER=whatsapp:+1234567890 
 #  Warning: Emergency Numbers
 
 This project includes optional Police/Hospital alert automation.
