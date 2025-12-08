@@ -24,8 +24,8 @@ The system is designed for:
 4. Real-time accident monitoring
 
 
-# Tech Stack
-## Frontend (React + Vite)
+## Tech Stack
+### 1 Frontend (React + Vite)
 1. Live camera streaming
 
 2. Video upload & analysis interface
@@ -35,7 +35,7 @@ The system is designed for:
 4. Severity badges & snapshot viewer  
 
 
-## AI Microservice (FastAPI + YOLO/OpenCV)
+### 2 AI Microservice (FastAPI + YOLO/OpenCV)
 1. Frame-by-frame accident detection
 
 2. Victim count (person/vehicle detection)
@@ -44,7 +44,7 @@ The system is designed for:
 
 4. Sends structured JSON metadata to backend
 
-## Backend (Spring Boot + MySQL)
+### 3 Backend (Spring Boot + MySQL)
 1. Stores incident data
 
 2. REST APIs for frontend
@@ -53,40 +53,40 @@ The system is designed for:
 
 4. Integration with Twilio WhatsApp API
 
-# How to Run the Project
+## How to Run the Project
 
-## Start the AI Service
+### Start the AI Service
 1. ```cd ai-service-python```
 2. ```pip install -r requirements.txt```
 3. ```uvicorn main:app --reload```
 
-## Start the Spring Boot Backend
+### Start the Spring Boot Backend
 1. ```cd backend-java```
 2. ```mvn spring-boot:run```
 
-## Start the React Frontend
+### Start the React Frontend
 1. ```cd frontend-react```
 2. ```npm install```
 3. ```npm run dev```
 
-# Features
-1. Real-time Accident Detection
-2. Severity Classification
+## Features
+##### Real-time Accident Detection
+##### Severity Classification
 -- Categorizes incidents as:
 a. Minor
 b. Moderate 
 c. Major
 d. Critical
-### Medical Injury Estimation
+##### Medical Injury Estimation
 -- AI-based injury approximation based on severity and victim count.
 
-### Snapshot Timeline
-#### Stores three images:
+##### Snapshot Timeline
+##### Stores three images:
 1. Pre-impact
 2. Impact
 3. Post-impact
 
-### WhatsApp Alert Automation
+##### WhatsApp Alert Automation
 -- Send the Alert message from twilio and to start this service first create and verify your whatsapp number from Twilio and make sure to update ```application.properties file``` in the backend.
 
 #  Configuration & Secrets (IMPORTANT)
