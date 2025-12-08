@@ -95,12 +95,12 @@ You must provide your own API keys and secrets via environment variables.
 
 Set the following in your system in the backend where the file loction is ```Backend-java\src\main\resources\application.properties``` :
 
--- DB_URL=jdbc:mysql://localhost:3306/accidents_db.
--- DB_USERNAME=your_db_user.
--- DB_PASSWORD=your_db_password.
--- TWILIO_ACCOUNT_SID=your_twilio_sid.
--- TWILIO_AUTH_TOKEN=your_twilio_token.
--- TWILIO_WHATSAPP_NUMBER=whatsapp:+1234567890.
+- DB_URL=jdbc:mysql://localhost:3306/accidents_db
+- DB_USERNAME=your_db_user
+- DB_PASSWORD=your_db_password
+- TWILIO_ACCOUNT_SID=your_twilio_sid
+- TWILIO_AUTH_TOKEN=your_twilio_token
+- TWILIO_WHATSAPP_NUMBER=whatsapp:+1234567890
 
 #  Warning: Emergency Numbers
 
