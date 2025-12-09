@@ -56,9 +56,11 @@ The system is designed for:
 ## How to Run the Project
 
 ### step 1. Start the AI Service
-1. ```cd ai-service-python```
-2. ```pip install -r requirements.txt```
-3. ```uvicorn app.main:app --reload --port 8000```
+1. ```python -m venv venv```
+2. ```.\venv\Scripts\activate```
+3. ```cd ai-service-python```
+4. ```pip install -r requirements.txt```
+5. ```uvicorn app.main:app --reload --port 8000```
 
 ### step 2. Start the Spring Boot Backend
 1. ```cd backend-java```
