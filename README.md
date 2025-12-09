@@ -58,7 +58,7 @@ The system is designed for:
 ### step 1. Start the AI Service
 1. ```cd ai-service-python```
 2. ```pip install -r requirements.txt```
-3. ```uvicorn main:app --reload```
+3. ```uvicorn app.main:app --reload --port 8000```
 
 ### step 2. Start the Spring Boot Backend
 1. ```cd backend-java```
